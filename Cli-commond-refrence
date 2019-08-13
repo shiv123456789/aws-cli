@@ -2,4 +2,9 @@
 aws ec2 create-tags --resources i-1286157c --tags Key=My1stTag,Value=Value1 Key=My2ndTag,Value=Value2 Key=My3rdTag,Value=Value3
 #list stop instances with instance Ids.
 aws ec2 describe-instances --filters  "Name=instance-state-name,Values=stopped" --query 'Reservations[].Instances[].InstanceId' --output=json
-
+#Start instance with instance ids.
+aws ec2 start-instances --instance-ids i-1234567890abcdef0
+#stop instances with instance ids.
+aws ec2 stop-instances --instance-ids i-1234567890abcdef0
+#Terminate.
+aws ec2 terminate-instances --instance-ids i-1234567890abcdef0
