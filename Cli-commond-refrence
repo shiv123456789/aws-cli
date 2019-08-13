@@ -1,0 +1,3 @@
+#Create tags.
+aws ec2 create-tags --resources i-1286157c --tags Key=My1stTag,Value=Value1 Key=My2ndTag,Value=Value2 Key=My3rdTag,Value=Value3
+#
