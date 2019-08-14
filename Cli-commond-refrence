@@ -8,3 +8,8 @@ aws ec2 start-instances --instance-ids i-1234567890abcdef0
 aws ec2 stop-instances --instance-ids i-1234567890abcdef0
 #Terminate.
 aws ec2 terminate-instances --instance-ids i-1234567890abcdef0
+
+
+
+reseller elb -removed-14-aug-2019
+workflow-web elb -removed-14-aug-2019
