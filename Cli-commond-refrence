@@ -16,7 +16,8 @@ aws ec2 create-tags --resources `head -n1 stopped_volumes.txt` --tags Key=Status
 aws ec2 describe-instances --filters  "Name=instance-state-name,Values=stopped" --query 'Reservations[].Instances[].BlockDeviceMappings[].Ebs.VolumeId' --output=text > stopped_volumes.txt
 #list only 10 line.
 aws ec2 describe-instances --filters  "Name=instance-state-name,Values=stopped" --query 'Reservations[].Instances[].BlockDeviceMappings[].Ebs.VolumeId' --output=json --max-items 10
-
+#Cli-commond-refrence
+https://riptutorial.com/Download/aws-cli.pdf
 
 
 
