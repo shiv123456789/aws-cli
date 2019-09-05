@@ -23,6 +23,9 @@ https://ryanstutorials.net/bash-scripting-tutorial/bash-variables.php
 
 #Sed and awk commond reffrence
 https://www.journaldev.com/28984/linux-sed-command-examples#linux-sed-command-syntax
+#List all reserved_active instance
+aws ec2 describe-reserved-instances --filters Name=state,Values=active --output=text | awk '{print $6 "\t" $8 "\t" $4}'  active_reserved_last_date.txt
+
 
 
 #reseller elb -removed-14-aug-2019
