@@ -18,7 +18,8 @@ aws ec2 describe-instances --filters  "Name=instance-state-name,Values=stopped" 
 aws ec2 describe-instances --filters  "Name=instance-state-name,Values=stopped" --query 'Reservations[].Instances[].BlockDeviceMappings[].Ebs.VolumeId' --output=json --max-items 10
 #Cli-commond-refrence
 https://riptutorial.com/Download/aws-cli.pdf
-
+#Bash scripting
+https://ryanstutorials.net/bash-scripting-tutorial/bash-variables.php
 
 
 
