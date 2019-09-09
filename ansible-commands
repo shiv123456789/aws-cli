@@ -1,5 +1,7 @@
 /etc/ansible/ec2.py --list  - it will do inventory of all aws resources.
-
+#check os version for all instance
+ansible -m shell -a 'lsb_release -a' --private-key=/home/ubuntu/main all >> os-version.txt
+ansible -m shell -a 'lsb_release -a' --private-key=/home/ubuntu/security all > os-version.sec.txt
 
 Now ping your ec2 instance with tag name 
 
