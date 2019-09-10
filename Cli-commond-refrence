@@ -25,7 +25,12 @@ https://ryanstutorials.net/bash-scripting-tutorial/bash-variables.php
 https://www.journaldev.com/28984/linux-sed-command-examples#linux-sed-command-syntax
 #List all reserved_active instance
 aws ec2 describe-reserved-instances --filters Name=state,Values=active --output=text | awk '{print $6 "\t" $8 "\t" $4}'  active_reserved_last_date.txt
-
+#Check file count on /
+for i in /*; do echo $i; find $i |wc -l; done
+#Find 0 size file 
+find . -size 0 -ls  
+#Find and delete 0 size files
+find . -type f -size 0 | xargs rm -f
 
 
 #reseller elb -removed-14-aug-2019
