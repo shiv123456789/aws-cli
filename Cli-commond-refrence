@@ -41,3 +41,5 @@ sudo postsuper -d ALL
 
 #for list instance by tag ip
 aws ec2 describe-instances --filters "Name=tag:service,Values=pricing" "Name=instance-state-name,Values=running" --query 'Reservations[*].Instances[*].PrivateIpAddress' --output=text
+#convert .pem tp .pub (its important for auto login)
+ssh-keygen -y -f private_key1.pem > public_key1.pub 
