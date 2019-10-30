@@ -49,3 +49,5 @@ ssh-keygen -y -f private_key1.pem > public_key1.pub
 aws ec2 describe-instances --query "Reservations[*].Instances[?State.Name=='running' && InstanceLifecycle==null].PrivateIpAddress" --output=text | xargs -n1 > on.demond.txt 
 #List all instance which not tag with {Team}-useful
 aws ec2 describe-instances --query 'Reservations[].Instances[?!contains(Tags[].Key, `Team`)][].PrivateIpAddress'
+#resize and growpart for root disk
+https://computingforgeeks.com/how-to-extend-aws-ec2-instance-boot-file-system-without-rebooting/
