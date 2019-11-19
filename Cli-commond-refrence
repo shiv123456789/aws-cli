@@ -26,6 +26,10 @@ https://www.journaldev.com/28984/linux-sed-command-examples#linux-sed-command-sy
 #List all reserved_active instance
 aws ec2 describe-reserved-instances --filters Name=state,Values=active --output=text | awk '{print $6 "\t" $8 "\t" $4}'  active_reserved_last_date.txt
 #Check file count on /
+#inodes
+ for i in /*; do echo $i; find $i |wc -l; done
+ for i in /home/*; do echo $i; find $i |wc -l; done
+ rm -rf /home/bad_user/directory_with_lots_of_empty_files
 for i in /*; do echo $i; find $i |wc -l; done
 #Find 0 size file 
 find . -size 0 -ls  
