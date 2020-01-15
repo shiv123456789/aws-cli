@@ -58,3 +58,27 @@ aws ec2 describe-instances --query "Reservations[*].Instances[?State.Name=='runn
 aws ec2 describe-instances --query 'Reservations[].Instances[?!contains(Tags[].Key, `Team`)][].PrivateIpAddress'
 #resize and growpart for root disk
 https://computingforgeeks.com/how-to-extend-aws-ec2-instance-boot-file-system-without-rebooting/
+#Git clon push commit
+git clone git@github.com:JoulRoad/instance-information.git
+ 1163  cat ~/.ssh/id_rsa.pub 
+ 1164  git clone git@github.com:JoulRoad/instance-information.git
+ 1165  ls
+ 1166  cd instance-information/
+ 1167  git status
+ 1168  ls
+ 1169  git checkout -b shiv/addTranformTfstate
+ 1170  cp ../terraform.tfstate .
+ 1171  LS
+ 1172  git status
+ 1173  git add .
+ 1174  git commit -m "Added terraform.tfstate"
+ 1175  git push
+ 1176      git push --set-upstream origin shiv/addTranformTfstate
+ 1177  git status
+ 1178  git checkout master
+ 1179  cd ..
+ 1180  ls
+ 1181  cd instance-information/
+ 1182  ls
+ 1183  git checkout master
+
