@@ -85,3 +85,5 @@ git clone git@github.com:JoulRoad/instance-information.git
  #[2.535658] EXT4-fs (vda): Couldn't remount RDWR because of unprocessed orphan inode list.  Please umount/remount instead
  sudo e2fsck -f /dev/xvda2
  than attach
+#GPG key
+https://help.github.com/en/github/authenticating-to-github/managing-commit-signature-verification
