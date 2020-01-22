@@ -87,3 +87,5 @@ git clone git@github.com:JoulRoad/instance-information.git
  than attach
 #GPG key
 https://help.github.com/en/github/authenticating-to-github/managing-commit-signature-verification
+#Zip complete
+zip -r opsworksCookbook_shiv cookbook/
