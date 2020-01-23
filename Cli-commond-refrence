@@ -90,3 +90,4 @@ https://help.github.com/en/github/authenticating-to-github/managing-commit-signa
 #Zip complete
 zip -r opsworksCookbook_shiv cookbook/
 aws s3 sync . s3://opsworks-beta/Backend/
+sed 's/[" ,;]//g'  #remove quote and comma from instance ids.
