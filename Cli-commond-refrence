@@ -93,3 +93,5 @@ aws s3 sync . s3://opsworks-beta/Backend/
 sed 's/[" ,;]//g'  #remove quote and comma from instance ids.
 #delete user with home directory
 sudo deluser --remove-home sahil
+#Redshift user
+CREATE USER "siddhant" in group reader PASSWORD 'Siddhant@123';
