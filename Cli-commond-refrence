@@ -95,3 +95,8 @@ sed 's/[" ,;]//g'  #remove quote and comma from instance ids.
 sudo deluser --remove-home sahil
 #Redshift user
 CREATE USER "siddhant" in group reader PASSWORD 'Siddhant@123';
+#zookeeper access
+/home/ubuntu/infra/zkui than edit config.cfg
+
+
+
