@@ -101,6 +101,9 @@ sudo deluser --remove-home sahil
 CREATE USER "siddhant" in group reader PASSWORD 'Siddhant@123';
 #zookeeper access
 /home/ubuntu/infra/zkui than edit config.cfg
-
+#remove opswork from instance
+a) sudo /etc/init.d/monit stop
+            b) sudo /etc/init.d/opsworks-agent stop
+            c) sudo rm -rf /etc/aws/opsworks/ /opt/aws/opsworks/ /var/log/aws/opsworks/ /var/lib/aws/opsworks/ /etc/monit.d/opsworks-agent.monitrc /etc/monit/conf.d/opsworks-agent.monitrc /var/lib/cloud/
 
 
