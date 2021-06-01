@@ -123,3 +123,7 @@ https://www.youtube.com/watch?v=iE7-9fqsrTU&list=PL_OdF9Z6GmVY9QfBfNUua_X2c2mT65
 
 #seller portal access.
 http://admin.trunkroute.com/vendorportalPermissions
+
+#Run java file
+java -jar myapp.jar
+curl -XGET http://internal-PROD-VPC-order-service-int-2145855008.ap-southeast-1.elb.amazonaws.com:9092/order_service/service/executeJobOnClassname?me=WhatsappForDelayedOrdersJob
